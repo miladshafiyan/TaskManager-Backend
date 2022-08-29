@@ -1,0 +1,14 @@
+{"FName" : "Milad","LName" : "shafiyan","UserName" : "MiladAdmin","Password":"1234","Active" : true,"UserRole" : "Admin"}
+,{"FName" : "Milad","LName" : "shafiyan","UserName" : "MiladWorker","Password":"1234","Active" : true,"UserRole" : "Worker"}
+,{"FName" : "Milad","LName" : "shafiyan","UserName" : "MiladWorker1","Password":"1234","Active" : true,"UserRole" : "Worker"}
+,{"FName" : "Milad","LName" : "shafiyan","UserName" : "MiladWorker2","Password":"1234","Active" : true,"UserRole" : "Worker"}
+
+
+--------------------------
+
+fetch('https://localhost:7008/api/Login/'+state.username+"/"+state.password)
+    .then((res) => res.json())
+           .then((data) => {
+	      console.log(data);  
+              console.log(data._id);         
+           }) 
